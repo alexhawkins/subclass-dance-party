@@ -1,13 +1,8 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
-  //this = new object of Dancer prototype
-  // this.step is overrriden with a new step function
-  // keep a reference to the old Dancer step
-  //call Dancer constructor passing in the
-  //BlinkyDancer instance as an argument,with the other argument
   this.$node = $('<span class="blinky-dancer"></span>');
-  //timeBetweenSteps = timeBetweenSteps;
+  timeBetweenSteps = timeBetweenSteps;
   Dancer.call(this, top, left, timeBetweenSteps);
-  //this._delay = 1000;
+  this._delay = 1000;
 };
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);

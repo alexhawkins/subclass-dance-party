@@ -25,3 +25,23 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.blinky-dancer{
+  border:10px solid blue;
+  border-radius:10px;
+  position:absolute;
+}
+
+.pop-dancer{
+  /*content: url(http://www.thisiscolossal.com/wp-content/uploads/2013/01/4.gif);*/
+  border:15px solid green;
+  border-radius:15px;
+  position:absolute;
+}
+
+.bouncy-dancer{
+  border:10px solid blue;
+  border-radius:10px;
+  position:absolute;
+}
+
