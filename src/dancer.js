@@ -9,7 +9,6 @@ var Dancer = function(top, left, timeBetweenSteps) {
 
 };
 
-
 Dancer.prototype.step = function() {
 
   //console.log('Called step function of Dancer.');
@@ -36,8 +35,6 @@ Dancer.prototype.lineup = function(){
   this._off = true;
 
   var width = $("body").width();
-
-
 
   if (this.left <= (width/2)) {
     this.left = 300;
