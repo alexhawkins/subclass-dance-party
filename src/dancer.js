@@ -6,6 +6,7 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.top = top;
   this.left = left;
   this._off = false;
+
 };
 
 
@@ -36,15 +37,32 @@ Dancer.prototype.lineup = function(){
 
   var width = $("body").width();
 
+
+
   if (this.left <= (width/2)) {
-    this.left = 25;
+    this.left = 300;
   } else {
-    this.left = width-75;
+    this.left = width-300;
+    this.$node.addClass('flipped');
   }
   var styleSettings = {
     top: this.top,
-    left: this.left
+    left: this.left,
   };
 
+  this.$node.on('mouseover', function(){
+    this.$node.css({'border': '10px solid yellow'});
+  });
+
   this.$node.animate(styleSettings, this._delay);
+  //this.$node.css({transform: 'transform:  -webkit-transform: scaleX(-1) filter: FlipH;'});
+  
 };
+
+Dancer.prototype.getBigger = function(){
+  this.$node.addClass('get-bigger');
+}
+
+
+
+

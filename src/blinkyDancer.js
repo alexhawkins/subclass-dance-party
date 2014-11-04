@@ -1,6 +1,7 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
   this.$node = $('<span class="blinky-dancer"></span>');
   Dancer.apply(this, arguments);
+  this.$node.on('mouseover', this.getBigger.bind(this));
   this._delay = 5000;
 };
 
