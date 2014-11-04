@@ -1,8 +1,7 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
   this.$node = $('<span class="blinky-dancer"></span>');
-  timeBetweenSteps = timeBetweenSteps;
-  Dancer.call(this, top, left, timeBetweenSteps);
-  this._delay = 1000;
+  Dancer.apply(this, arguments);
+  this._delay = 5000;
 };
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
