@@ -37,15 +37,16 @@ body, a:link, a:visited, a:active{
 }
 
 .pop-dancer{
-  content: url(http://giffiles.alphacoders.com/124/1246.gif);
-  height: 20%;
+  /*content: url(http://giffiles.alphacoders.com/124/1246.gif);*/
+  border:15px solid yellow;
+  border-radius:15px;
   position:absolute;
 }
 
 .fighting-dancer{
-  content: url(http://i.giphy.com/14qxpCwwGaoQPS.gif);
-  height:10%;
-  width: 10%;
+  /*content: url(http://i.giphy.com/14qxpCwwGaoQPS.gif);*/
+  border:10px solid green;
+  border-radius:10px;;
   position:absolute;
 }
 
@@ -65,7 +66,7 @@ body, a:link, a:visited, a:active{
 }
 
 .get-bigger {
-  border:15px solid yellow;
-  border-radius:15px;
+  border:25px solid white;
+  border-radius:25px;
 }
 

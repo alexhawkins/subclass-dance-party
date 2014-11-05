@@ -37,10 +37,10 @@ Dancer.prototype.lineup = function(){
   var width = $("body").width();
 
   if (this.left <= (width/2)) {
-    this.left = 300;
+    this.left = 100;
   } else {
-    this.left = width-300;
-    this.$node.addClass('flipped');
+    this.left = width-100;
+    //this.$node.addClass('flipped');
   }
   var styleSettings = {
     top: this.top,
